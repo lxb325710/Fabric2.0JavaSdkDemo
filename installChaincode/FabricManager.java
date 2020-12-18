@@ -335,7 +335,7 @@ public class FabricManager {
         peerProp.setProperty("sslProvider", "openSSL");
         peerProp.setProperty("negotiationType", "TLS");
 
-        Peer peer = client.newPeer("p1o1","grpcs://peer1-org1.txhy.com:7501",peerProp);
+        Peer peer = client.newPeer("p1o1","grpcs://peer1-org1.com:7501",peerProp);
         return  Query.listPeerChannels(client,peer);
     }
 
