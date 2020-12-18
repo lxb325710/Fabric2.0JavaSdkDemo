@@ -20,7 +20,7 @@
     <artifactId>fastjson</artifactId>
     <version>1.2.75</version>
   </dependency>
-  	<dependency>
+  <dependency>
     <groupId>org.hyperledger.fabric-sdk-java</groupId>
     <artifactId>fabric-sdk-java</artifactId>
     <version>2.0.0</version>
