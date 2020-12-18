@@ -38,10 +38,10 @@ public class Init {
         peerProp.setProperty("negotiationType", "TLS");
 
         Channel channel = client.newChannel(name);
-        Peer peer1 = client.newPeer("p1o1","grpcs://peer1-org1.txhy.com:7501",peerProp);
+        Peer peer1 = client.newPeer("p1o1","grpcs://peer1-org1.com:7501",peerProp);
         channel.addPeer(peer1);
 
-        Orderer orderer1 = client.newOrderer("or1o0","grpcs://orderer1-org0.txhy.com:8050",peerProp);
+        Orderer orderer1 = client.newOrderer("or1o0","grpcs://orderer1-org0.com:8050",peerProp);
         channel.addOrderer(orderer1);
         channel.initialize();
         return new Fabric(client,channel);
@@ -72,10 +72,10 @@ public class Init {
 
         Channel channel = client.newChannel(name);
 
-        Peer peer2 = client.newPeer("p1o2","grpcs://peer1-org2.txhy.com:7551",peerProp);
+        Peer peer2 = client.newPeer("p1o2","grpcs://peer1-org2.com:7551",peerProp);
         channel.addPeer(peer2);
 
-        Orderer orderer1 = client.newOrderer("or1o0","grpcs://orderer1-org0.txhy.com:8050",peerProp);
+        Orderer orderer1 = client.newOrderer("or1o0","grpcs://orderer1-org0.com:8050",peerProp);
         channel.addOrderer(orderer1);
 
         channel.initialize();
@@ -108,10 +108,10 @@ public class Init {
 
         Channel channel = client.newChannel(name);
 
-        Peer peer3 = client.newPeer("p1o3","grpcs://peer1-org3.txhy.com:7601",peerProp);
+        Peer peer3 = client.newPeer("p1o3","grpcs://peer1-org3.com:7601",peerProp);
         channel.addPeer(peer3);
 
-        Orderer orderer1 = client.newOrderer("or1o0","grpcs://orderer1-org0.txhy.com:8050",peerProp);
+        Orderer orderer1 = client.newOrderer("or1o0","grpcs://orderer1-org0.com:8050",peerProp);
         channel.addOrderer(orderer1);
 
         channel.initialize();
@@ -144,14 +144,14 @@ public class Init {
 
         Channel channel = client.newChannel(name);
 
-        Peer peer1 = client.newPeer("p1o1","grpcs://peer1-org1.txhy.com:7501",peerProp);
-        Peer peer2 = client.newPeer("p1o2","grpcs://peer1-org2.txhy.com:7551",peerProp);
-        Peer peer3 = client.newPeer("p1o3","grpcs://peer1-org3.txhy.com:7601",peerProp);
+        Peer peer1 = client.newPeer("p1o1","grpcs://peer1-org1.com:7501",peerProp);
+        Peer peer2 = client.newPeer("p1o2","grpcs://peer1-org2.com:7551",peerProp);
+        Peer peer3 = client.newPeer("p1o3","grpcs://peer1-org3.com:7601",peerProp);
         channel.addPeer(peer1);
         channel.addPeer(peer2);
         channel.addPeer(peer3);
 
-        Orderer orderer1 = client.newOrderer("or1o0","grpcs://orderer1-org0.txhy.com:8050",peerProp);
+        Orderer orderer1 = client.newOrderer("or1o0","grpcs://orderer1-org0.com:8050",peerProp);
         channel.addOrderer(orderer1);
 
         channel.initialize();
